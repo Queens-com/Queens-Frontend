@@ -35,27 +35,27 @@ function SignUp() {
           <form className='flex flex-col gap-3 mt-4'>
             <label htmlFor="firstName" className='flex gap-2 flex-col text-left'>
             First Name
-            <input type="text" placeholder='e.g John' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' required />
+            <input type="text" placeholder='e.g John' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe- text-base4' required />
             </label>
 
             <label htmlFor="lastName" className='flex gap-2 flex-col text-left'>
             Last Name
-            <input type="text" placeholder='e.g Doe' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' required />
+            <input type="text" placeholder='e.g Doe' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4 text-base' required />
             </label>
 
             <label htmlFor="email" className='flex gap-2 flex-col text-left'>
             Email
-            <input type="email" placeholder='yourname@email.com' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' required />
+            <input type="email" placeholder='yourname@email.com' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4 text-base' required />
             </label>
 
             <label htmlFor="password" className='flex gap-2 flex-col text-left'>
             Password
-            <input type="password" placeholder='Enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' />
+            <input type="password" placeholder='Enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4 text-base' />
             </label>
 
             <label htmlFor="password" className='flex gap-2 flex-col text-left'>
             Confirm Password
-            <input type="password" placeholder='Re-enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' />
+            <input type="password" placeholder='Re-enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4 text-base' />
             </label>
 
           </form>
