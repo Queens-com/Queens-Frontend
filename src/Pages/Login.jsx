@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import '../Styles/globalStyles.css'
+import style from "../Styles/style.js"
 
 function SignUp() {
   const [isToggled, setIsToggled] = useState(false);

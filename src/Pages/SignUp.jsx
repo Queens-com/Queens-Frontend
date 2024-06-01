@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/globalStyles.css'
 
+
 function SignUp() {
   return (
     <div className='SignUp'>
