@@ -3,3 +3,40 @@
 .bricolage {
     font-family: "Bricolage Grotesque", sans-serif;
 }
+
+.toggle-switch {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle-switch:checked + .switch {
+  background-color: #4caf50;
+}
+
+.toggle-switch:checked + .switch::before {
+  transform: translateX(26px);
+}   
