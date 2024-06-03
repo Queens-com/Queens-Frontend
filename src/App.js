@@ -7,10 +7,10 @@ import Succes from './Pages/Succes';
 function App() {
   return (
     <div className="App">
-      <Succes />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/succes" element={<Succes />} />
       </Routes>
     </div>
   );
