@@ -8,8 +8,8 @@ import Reset_Password from './Pages/Reset_Password';
 function App() {
   return (
     <div className="App">
-      <Reset_Password />
       <Routes>
+        <Route path="/reset_password" element={<Reset_Password />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/succes" element={<Succes />} />
