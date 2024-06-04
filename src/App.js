@@ -7,6 +7,7 @@ import Succes from './Pages/Succes';
 function App() {
   return (
     <div className="App">
+      <Login />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
