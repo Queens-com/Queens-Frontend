@@ -6,16 +6,16 @@ const Reset_Password = () => {
     <div className='Reset_Password'>
     <div className='flex items-center bg-white-500 justify-center'  style={{height:"100vh", width:"100vw"}}>
         <div className=''>
-        <div className='justify-center flex items-center mb-20'>
+        <div className='justify-center flex items-center mb-16'>
         <img src={Q_svg} alt="Q" />
         </div>
         <div className='mb-5'>
-            <button className='p-2'>
+            <button className='p-1'>
             <img src={back_svg}></img>
             </button>
         </div>
         <div >
-            <h1 className='bricolage font-bold text-3xl mb-1 text-active_text'>Reset Pasword</h1>
+            <h1 className='bricolage font-bold text-4xl mb-1 text-active_text'>Reset Pasword</h1>
             <p className='text-label font-medium'>Insert your registered email or phone number</p>
         </div>
         
