@@ -9,12 +9,14 @@ const Reset_Password = () => {
         <div className='justify-center flex items-center mb-20'>
         <img src={Q_svg} alt="Q" />
         </div>
-        <div className='mb-7'>
+        <div className='mb-5'>
+            <button className='p-2'>
             <img src={back_svg}></img>
+            </button>
         </div>
         <div >
             <h1 className='bricolage font-bold text-3xl mb-1 text-active_text'>Reset Pasword</h1>
-            <p className='text-label'>Insert your registered email or phone number</p>
+            <p className='text-label font-medium'>Insert your registered email or phone number</p>
         </div>
         
         <form className='flex flex-col gap-3 mt-4'>
