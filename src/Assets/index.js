@@ -5,6 +5,7 @@ import apple_svg from "./Apple.svg";
 import eye_svg from "./Eye.svg"
 import warning_svg from "./Warning.svg"
 import linedont_svg from "./linedont.svg"
+import back_svg from "./back.svg"
 
 export {
     Q_svg,
@@ -14,4 +15,5 @@ export {
     eye_svg,
     warning_svg,
     linedont_svg,
+    back_svg,
 };
