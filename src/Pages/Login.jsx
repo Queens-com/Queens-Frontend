@@ -66,8 +66,8 @@ function SignUp() {
 
           <div className='flex gap-3 flex-col mt-4'>
             <button className='bg-[#1E1E1E] text-white pt-2 pb-2 ps-4 pe-4 rounded-full'>LogIn</button>
-            <Link to="" className='text-s text-lightgrey-500'>Forgotten Password?</Link>
-            <Link to="/login" className='text-xs text-blue-500 underline'>Login</Link>
+            <Link to="" className='text-s text-label'>Forgotten Password?</Link>
+            <Link to="/login" className='text-s text-link font-medium underline'>Login</Link>
             <p className={`font-roboto align-center text-placeholder_text`}>Copyright © 2024 Queens. All rights reserved</p>
           </div>
 
