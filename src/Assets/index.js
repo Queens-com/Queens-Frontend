@@ -1,12 +1,12 @@
-import Q_svg from "./Q.svg";
-import google_svg from "./Google.svg";
-import facebook_svg from "./Facebook.svg";
-import apple_svg from "./Apple.svg";
-import eye_svg from "./Eye.svg"
-import eyeCl_svg from "./Eye.svg"
-import warning_svg from "./Warning.svg"
-import linedont_svg from "./linedont.svg"
-import back_svg from "./back.svg"
+import Q_svg from "./icons/Q.svg";
+import google_svg from "./icons/Google.svg";
+import facebook_svg from "./icons/Facebook.svg";
+import apple_svg from "./icons/Apple.svg";
+import eye_svg from "./icons/Eye.svg"
+import eyeCl_svg from "./icons/EyeCl.svg"
+import warning_svg from "./icons/Warning.svg"
+import linedont_svg from "./icons/linedont.svg"
+import back_svg from "./icons/back.svg"
 
 export {
     Q_svg,
