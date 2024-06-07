@@ -1,7 +1,9 @@
 import React from 'react'
-import {Q_svg, back_svg, } from "../Assets"
+import {Q_svg, back_svg, eye_svg, eyeCl_svg} from "../Assets"
 
 const Reset_Password = () => {
+  let showpassword = false;
+
   return (
     <div className='Reset_Password'>
     <div className='flex items-center bg-white-500 justify-center'  style={{height:"100vh", width:"100vw"}}>
@@ -22,7 +24,13 @@ const Reset_Password = () => {
         <form className='flex flex-col gap-3 mt-4'>
             <label htmlFor="firstName" className='flex gap-2 flex-col text-left text-label'>
             Email
-            <input type="text" placeholder='enter your email' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe- text-base4' required />
+            <div className='flex flex-row justify-between'>
+
+            <input type="text" placeholder='enter your email' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-0 text-base4' required />
+            <button className='h-100 aspect-square' >
+            <img src={showpassword?eye_svg:eyeCl_svg} className='h-100 aspect-square' />
+            </button>
+            </div>
             </label>
         </form>
 
