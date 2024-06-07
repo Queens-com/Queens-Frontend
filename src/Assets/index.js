@@ -7,6 +7,7 @@ import eyeCl_svg from "./icons/EyeCl.svg"
 import warning_svg from "./icons/Warning.svg"
 import linedont_svg from "./icons/linedont.svg"
 import back_svg from "./icons/back.svg"
+import back2_svg from "./icons/back2.svg"
 
 export {
     Q_svg,
@@ -18,4 +19,5 @@ export {
     warning_svg,
     linedont_svg,
     back_svg,
+    back2_svg,
 };
