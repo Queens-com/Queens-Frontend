@@ -5,10 +5,12 @@ import SignUp from './Pages/SignUp';
 import Succes from './Pages/Succes';
 import Reset_Password from './Pages/Reset_Password';
 import OTP from './Pages/OTP';
+import Landing_Page from './Pages/Landing_Page';
 
 function App() {
   return (
     <div className="App">
+      <Landing_Page />
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
