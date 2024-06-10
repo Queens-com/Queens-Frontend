@@ -1,16 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import '../Styles/globalStyles.css'
-import style from "../Styles/style.js"
+// import style from "../Styles/style.js"
 
 function SignUp() {
-  const [isToggled, setIsToggled] = useState(false);
-
-  const handleToggle = () => {
-    setIsToggled(!isToggled);
-  };
-
   return (
     <div className='Login items-center'>
       <div className='flex items-center justify-center p-6'>

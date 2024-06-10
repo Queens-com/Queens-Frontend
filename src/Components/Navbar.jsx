@@ -3,11 +3,11 @@ import { Q_svg, back_svg, shop_svg, search_svg, profile_svg, heart_svg, cart_svg
 
 const Navbar = () => {
     return (
-        <div className='Navbar'>
+        <nav className='Navbar'>
             <div className='flex flex-col h-16 w-100 items-center justify-center pt-1'>
                 <div style={{ width: "80%", height: "70%" }} className='ml-10 flex flex-row justify-between'>
                     <div className=' h-100 aspect-square pt-0 pr-1 pl-1 pb-0 mr-20'>
-                        <img src={Q_svg}></img>
+                        <img src={Q_svg} alt="logo"></img>
                     </div>
 
                     <div className='flex flex-row gap-2 items-center'>
@@ -52,17 +52,17 @@ const Navbar = () => {
                     </div>
 
                     <div className='w-50 flex item-center gap 6'>
-                        <button className="bg-black text-white rounded-full border-black m-1 px-4">
+                        <button className="bg-black text-white rounded-full border-black m-1 px-4 w-[90px] ">
                             Sign up
                         </button>
-                        <button className="bg-white text-black rounded-full border border-black m-1 px-4">
+                        <button className="bg-white text-black rounded-full border border-black m-1 px-4 w-[90px]">
                             Login
                         </button>
                     </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 

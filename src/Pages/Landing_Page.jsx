@@ -5,7 +5,7 @@ import Footer from "../Components/Footer"
 const Landing_Page = () => {
   return (
     <div className='Landing_Page'>
-        <Navbar />
+        {/* <Navbar /> */}
         <Footer />
     </div>
   )

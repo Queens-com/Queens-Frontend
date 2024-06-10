@@ -20,8 +20,8 @@ import insta_img from "./images/insta.png"
 
 import hand_img from "./images/hands.png";
 import demoItem1 from "./images/item1.png";
-import hero1 from "./images/hero1.png";
-import hero2 from "./images/hero2.png";
+import hero1 from "./images/Hero1.png";
+import hero2 from "./images/Hero2.png";
 
 export {
     facebook_img,
