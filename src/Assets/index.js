@@ -19,9 +19,15 @@ import x_img from "./images/x.png"
 import insta_img from "./images/insta.png"
 
 import hand_img from "./images/hands.png";
+import handF_img from "./images/hand_full.png";
+import handFW_img from "./images/hand_full_white.png";
 import demoItem1 from "./images/item1.png";
 import hero1_img from "./images/Hero1.png";
 import hero2_img from "./images/Hero2.png";
+
+import star_img from "./icons/star.png"
+import back_img from "./icons/back-square.png"
+import support24_img from "./icons/24-support.png"
 
 export {
     facebook_img,
@@ -31,6 +37,13 @@ export {
     demoItem1,
     hero1_img,
     hero2_img,
+
+    handF_img,
+    handFW_img,
+
+    star_img,
+    back_img,
+    support24_img,
 
     Q_svg,
     google_svg,
