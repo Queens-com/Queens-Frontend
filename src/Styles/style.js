@@ -15,7 +15,7 @@ const style = {
         error2: "#fa4d56",
         warning: "#FFC700",
     },
-    footerh4:"mb-[16px]"
+    footerh4:"mb-[16px] font-bold m-0"
 }
 
 export default style;
