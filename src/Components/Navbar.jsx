@@ -36,20 +36,22 @@ const Navbar = () => {
 
                     <div className='flex gap-3'>
 
-                    <div className=' flex flex-x-0 gap-4 itmes-center '>
-                            <button className='mr-6'>
-                            <img src={search_svg} alt="Search" width={25} height="25px" />
-                            </button>
-                        <button>
-                            <img src={profile_svg} alt="Profile" width={25} height={25}/>
-                        </button>
-                        <button>
-                            <img src={heart_svg} alt="Favoirites" width={25} height={25}/>
-                        </button>
-                        <button>
-                            <img src={cart_svg} alt="Cart" width={25} height={25}/>
-                        </button>
+                    <div className='flex gap-4 items-center'>
+                      <button className='mr-6'>
+                        <img src={search_svg} alt="Search" className="w-6 h-6 flex-shrink-0" />
+                      </button>
+                      <button>
+                        <img src={profile_svg} alt="Profile" className="w-7 h-7 flex-shrink-0 object-contain" />
+                      </button>
+                      <button>
+                        <img src={heart_svg} alt="Favorites" className="w-7 h-7 flex-shrink-0 object-contain" />
+                      </button>
+                      <button>
+                        <img src={cart_svg} alt="Cart" className="w-7 h-7 flex-shrink-0 object-contain" />
+                      </button>
                     </div>
+
+
 
                     <div className='w-50 flex item-center gap 6'>
                         <button className="bg-black text-white rounded-full border-black m-1 px-4 w-[90px] ">

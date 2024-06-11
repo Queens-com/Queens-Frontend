@@ -5,8 +5,8 @@ import Footer from "../Components/Footer"
 const Landing_Page = () => {
   return (
     <div className='Landing_Page'>
-        {/* <Navbar /> */}
-        <Footer />
+        <Navbar />
+        {/* <Footer /> */}
     </div>
   )
 }
