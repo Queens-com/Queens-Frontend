@@ -20,8 +20,8 @@ import insta_img from "./images/insta.png"
 
 import hand_img from "./images/hands.png";
 import demoItem1 from "./images/item1.png";
-import hero1 from "./images/Hero1.png";
-import hero2 from "./images/Hero2.png";
+import hero1_img from "./images/Hero1.png";
+import hero2_img from "./images/Hero2.png";
 
 export {
     facebook_img,
@@ -29,8 +29,8 @@ export {
     insta_img,
     hand_img,
     demoItem1,
-    hero1,
-    hero2,
+    hero1_img,
+    hero2_img,
 
     Q_svg,
     google_svg,
