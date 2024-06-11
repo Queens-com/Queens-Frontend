@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
-import { hero1_img, hero2_img } from '../Assets'
+import { back2_svg, back_img, hero1_img, hero2_img, star_img, support24_img } from '../Assets'
 
 const Landing_Page = () => {
   return (
@@ -26,6 +26,30 @@ const Landing_Page = () => {
             <img src={hero1_img} className='absolute bottom-0 left-0 w-70 h-auto'></img>
             <img src={hero2_img} className='absolute top-0 right-0 w-70 h-auto'></img>
             </div>
+          </div>
+        </section>
+        <section className='flex h-auto px-[12rem] py-10'>
+          <div className='flex flex-col items-center basis-1/3'>
+            <img src={star_img} className="w-[24px] h-[24px] mb-8" />
+            <p className='font-bold text-lg bricolage mb-1'>High Quality</p>
+            <span className='leading-tight text-center roboto'>All of our products go through very strict inspection before we dispatch them</span>
+          </div>
+          <div className='flex flex-col items-center basis-1/3'>
+            <img src={back_img} className="w-[24px] h-[24px] mb-8" />
+            <p className='font-bold text-lg bricolage mb-1'>Easy Returns</p>
+            <span className='leading-tight text-center roboto'>Our return policy is simple and that is why customers love our shop</span>
+          </div>
+          <div className='flex flex-col items-center basis-1/3'>
+            <img src={support24_img} className="w-[24px] h-[24px] mb-8" />
+            <p className='font-bold text-lg bricolage mb-1'>Customer Service</p>
+            <span className='leading-tight text-center roboto'>We offer amazing customer service no matter what happens</span>
+          </div>
+        </section>
+
+        <section>
+          <div className='flex justify-between items-center px-[10rem] py-6'>
+            <span className='bricolage font-bold text-3xl'>New Arrivals</span>
+            <a href='' className='underline'>See more</a>
           </div>
         </section>
         <Footer />
