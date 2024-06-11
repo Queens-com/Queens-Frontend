@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
-import { back2_svg, back_img, hero1_img, hero2_img, star_img, support24_img } from '../Assets'
+import { back2_svg, back_img, hand_img, hero1_img, hero2_img, star_img, support24_img } from '../Assets'
 
 const Landing_Page = () => {
   return (
@@ -50,6 +50,19 @@ const Landing_Page = () => {
           <div className='flex justify-between items-center px-[10rem] py-6'>
             <span className='bricolage font-bold text-3xl'>New Arrivals</span>
             <a href='' className='underline'>See more</a>
+          </div>
+          <div className='grid place-content-center'>
+            will fill in late
+          </div>
+        </section>
+
+        <section>
+          <img src={hand_img} className='w-[100vw] h-auto' />
+          <div className='w-[100vw] h-auto bg-[#00000088]' >
+kdfja
+          </div>
+          <div className='w-[100vw] h-auto bg-[#00000088] bg-[url(${})] ' >
+kdfja
           </div>
         </section>
         <Footer />
