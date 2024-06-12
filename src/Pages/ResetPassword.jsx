@@ -1,11 +1,11 @@
 import React from 'react'
 import {Q_svg, back_svg, eye_svg, eyeCl_svg} from "../Assets"
 
-const Reset_Password = () => {
+const ResetPassword = () => {
   let showpassword = false;
 
   return (
-    <div className='Reset_Password'>
+    <div className='ResetPassword'>
     <div className='flex items-center bg-white-500 justify-center'  style={{height:"100vh", width:"100vw"}}>
         <div className=''>
         <div className='justify-center flex items-center mb-16'>
@@ -13,7 +13,7 @@ const Reset_Password = () => {
         </div>
         <div className='mb-5'>
             <button className='p-1'>
-            <img src={back_svg}></img>
+            <img src={back_svg} alt='backimg'></img>
             </button>
         </div>
         <div >
@@ -28,7 +28,7 @@ const Reset_Password = () => {
 
             <input type="text" placeholder='enter your email' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-0 text-base4' required />
             <button className='h-100 aspect-square' >
-            <img src={showpassword?eye_svg:eyeCl_svg} className='h-100 aspect-square' />
+            <img src={showpassword?eye_svg:eyeCl_svg} className='h-100 aspect-square' alt='showpassimg'/>
             </button>
             </div>
             </label>
@@ -43,8 +43,11 @@ const Reset_Password = () => {
   )
 }
 
-export default Reset_Password
+export default ResetPassword
 
+
+
+// eslint-disable-next-line
 {
     <div className='SignUp'>
     <div className='flex items-center justify-center p-6' style={{height:"100vh"}}>

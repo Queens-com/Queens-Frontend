@@ -1,14 +1,41 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import axios from '../axios'
 import '../Styles/globalStyles.css'
-import style from "../Styles/style.js"
+
 
 function SignUp() {
-  const [isToggled, setIsToggled] = useState(false);
 
-  const handleToggle = () => {
-    setIsToggled(!isToggled);
+  const [showModal, setShowModal] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    const remember = event.target.toggleSwitch.checked;
+
+    try {
+      const response = await axios.post('/account/login', {
+        email,
+        password,
+        remember,
+      });
+
+      console.log(response.data); 
+    } catch (error) {
+      console.error('There was an error logging in.', error);
+      setErrorMessage('There was an error logging in!');
+      setShowModal(true);
+
+      setTimeout(() => {
+        setShowModal(false);
+        setErrorMessage('');
+      }, 5000);
+    }
   };
 
   return (
@@ -40,15 +67,25 @@ function SignUp() {
             </div>
           </div>
 
-          <form className='flex flex-col gap-3 mt-4'>
+          {showModal && (
+
+            <div>
+               <div className='flex items-center gap-3 p-3 bg-red-100 mt-4 rounded'>
+                 <i className="fa-solid fa-triangle-exclamation text-red-500"></i>
+                 <p className='text-xs'>{errorMessage}</p>
+              </div>
+            </div>
+          )}
+
+          <form className='flex flex-col gap-3 mt-4' onSubmit={handleSubmit}>
             <label htmlFor="email" className='flex gap-2 flex-col text-left'>
               Email
-              <input type="email" placeholder='yourname@email.com' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' required />
+              <input name='email' type="email" placeholder='yourname@email.com' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' required />
             </label>
 
             <label htmlFor="password" className='flex gap-2 flex-col text-left'>
               Password
-              <input type="password" placeholder='Enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' />
+              <input name='password' type="password" placeholder='Enter password' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-4' />
             </label>
 
             <label htmlFor="toggleSwitch" className="h-[50px] flex gap-2 flex-row text-left items-center justify-between">
@@ -57,15 +94,14 @@ function SignUp() {
                 type="checkbox"
                 id="toggleSwitch"
                 className="toggle-switch"
-              // checked={isToggled}
-              // onChange={handleToggle}
               />
               <span className="switch" />
             </label>
+
+            <button type='submit' className='bg-[#1E1E1E] text-white pt-2 pb-2 ps-4 pe-4 rounded-full'>Login</button>
           </form>
 
           <div className='flex gap-3 flex-col mt-4'>
-            <button className='bg-[#1E1E1E] text-white pt-2 pb-2 ps-4 pe-4 rounded-full'>LogIn</button>
             <Link to="" className='text-s text-label'>Forgotten Password?</Link>
             <Link to="/login" className='text-s text-link font-medium underline'>Login</Link>
             <p className={`font-roboto align-center text-placeholder_text`}>Copyright © 2024 Queens. All rights reserved</p>
@@ -73,6 +109,8 @@ function SignUp() {
 
         </div>
       </div>
+
+
     </div>
   )
 }
