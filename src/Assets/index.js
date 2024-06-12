@@ -1,10 +1,23 @@
-// import Q_logo from "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717242411/vi2wz0daaykkw8nrnzdi.png";
-// import line from "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717244265/u4ko1m6rk5ykixvjq2ym.png";
-// import dot from  "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717244265/cjkzrezs0kcdndeb6usv.png";
-// import google_logo from "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717245187/pyvxzowophv1r6s5bqql.png";
-// import facebook_logo from "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717245186/kaqqkjeppcug1iuqrd6b.png";
-// import apple_logo from "https://res.cloudinary.com/dzzwvcapu/image/upload/v1717245186/mqj6g8jos5jrsbiirajj.png";
+import Q_svg from "./icons/Q.svg";
+import google_svg from "./icons/Google.svg";
+import facebook_svg from "./icons/Facebook.svg";
+import apple_svg from "./icons/Apple.svg";
+import eye_svg from "./icons/Eye.svg"
+import eyeCl_svg from "./icons/EyeCl.svg"
+import warning_svg from "./icons/Warning.svg"
+import linedont_svg from "./icons/linedont.svg"
+import back_svg from "./icons/back.svg"
+import back2_svg from "./icons/back2.svg"
 
-// export {
-//     Q_logo, line, dot, google_logo, facebook_logo, apple_logo,
-// };
+export {
+    Q_svg,
+    google_svg,
+    facebook_svg,
+    apple_svg,
+    eye_svg,
+    eyeCl_svg,
+    warning_svg,
+    linedont_svg,
+    back_svg,
+    back2_svg,
+};
