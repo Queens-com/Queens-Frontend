@@ -29,6 +29,11 @@ import star_img from "./icons/star.png"
 import back_img from "./icons/back-square.png"
 import support24_img from "./icons/24-support.png"
 
+import plus_img from "./icons/add-circle.png"
+import minus_img from "./icons/minus.png"
+import nenu_img from "./icons/menu.png"
+import closeX_img from "./icons/close-circle.png"
+
 export {
     facebook_img,
     x_img,
@@ -44,6 +49,11 @@ export {
     star_img,
     back_img,
     support24_img,
+
+    plus_img,
+    minus_img,
+    nenu_img,
+    closeX_img,
 
     Q_svg,
     google_svg,

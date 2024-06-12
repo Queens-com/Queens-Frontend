@@ -11,7 +11,7 @@ import {
 function Footer() {
   return (
     <footer className="Footer">
-      <div className="relative h-[450px] w-[100vw] g-pink-500 flex flex-col items-center">
+      <div className="relative h-[450px] w-full g-pink-500 flex flex-col items-center">
         <div
           className="absolute flex flex-col g-slate-500 bottom-0 w-100"
           style={{ width: "77%" }}
@@ -70,11 +70,11 @@ function Footer() {
                   <a href="">
                     <p>Material and care</p>
                   </a>
-                </div>
-                <div className="basis-1/2">
                   <a href="">
                     <p>How to pay</p>
                   </a>
+                </div>
+                <div className="basis-1/2">
                   <a href="">
                     <p>Customer Care </p>
                   </a>

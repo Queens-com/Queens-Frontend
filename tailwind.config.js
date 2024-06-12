@@ -20,6 +20,7 @@ module.exports = {
         'error1': "#da1e28",
         'error2': "#fa4d56",
         'warning': "#FFC700",
+        'newTag': "#1DA272",
       }
     },
   },
