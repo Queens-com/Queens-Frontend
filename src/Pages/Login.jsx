@@ -13,22 +13,22 @@ function SignUp() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     const email = event.target.email.value;
     const password = event.target.password.value;
-    const remember = event.target.toggleSwitch.checked;
-
+  
     try {
-      const response = await axios.post('/account/login', {
-        email,
-        password,
-        remember,
+      const response = await axios.post('/account/login', { email, password }, {
+        headers: { 'Content-Type': 'application/json' }
       });
 
-      console.log(response.data); 
-    } catch (error) {
-      console.error('There was an error logging in.', error);
-      setErrorMessage('There was an error logging in!');
+      console.log(response.data);
+    } 
+    catch (error) {
+      console.error('There was an error logging in.', error.response || error);
+
+      const errorMessage = error.response?.data?.detail || 'An error occurred during login. Please try again.';
+      setErrorMessage(errorMessage);
       setShowModal(true);
 
       setTimeout(() => {
@@ -103,7 +103,7 @@ function SignUp() {
 
           <div className='flex gap-3 flex-col mt-4'>
             <Link to="" className='text-s text-label'>Forgotten Password?</Link>
-            <Link to="/login" className='text-s text-link font-medium underline'>Login</Link>
+            <Link to="/signUp" className='text-s text-link font-medium underline'>Create an account!</Link>
             <p className={`font-roboto align-center text-placeholder_text`}>Copyright © 2024 Queens. All rights reserved</p>
           </div>
 
