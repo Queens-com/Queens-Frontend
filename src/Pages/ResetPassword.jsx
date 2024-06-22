@@ -28,7 +28,7 @@ const ResetPassword = () => {
 
             <input type="text" placeholder='enter your email' className='bg-gray-100 rounded-full pt-2 pb-2 ps-4 pe-0 text-base4' required />
             <button className='h-100 aspect-square' >
-            <img src={showpassword?eye_svg:eyeCl_svg} className='h-100 aspect-square' alt='showpassimg'/>
+            <img src={showpassword?eye_svg:eyeCl_svg} alt="show-password" className='h-100 aspect-square' />
             </button>
             </div>
             </label>
@@ -44,24 +44,3 @@ const ResetPassword = () => {
 }
 
 export default ResetPassword
-
-
-
-// eslint-disable-next-line
-{
-    <div className='SignUp'>
-    <div className='flex items-center justify-center p-6' style={{height:"100vh"}}>
-      
-      <div className='text-black max-w-screen-sm m-auto text-center'>
-        <img src="https://res.cloudinary.com/dzzwvcapu/image/upload/v1717242411/vi2wz0daaykkw8nrnzdi.png" alt="logo" className='w-100 m-auto mb-8' />
-        <div>
-          <h1 className='bricolage font-bold text-2xl mb-3'>Congrats, your account is set</h1>
-          <div className='flex items-center justify-center gap-2 ms-8 me-8'>
-            <p className='font-semibold text-gray-600 text-md text-center '>You will be redirected shortly</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-}

@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Link } from 'react-router-dom'
 import { back_svg, back2_svg } from '../Assets'
 const userEmail = "tobymacqueen@gmail.com";
 
@@ -36,7 +37,7 @@ const OTP = () => {
             <button className='bg-active_text text-white pt-2 pb-2 ps-4 pe-4 rounded-full flex flex-row justify-center items-center'>
                 Proceed
                 <div className='ml-2 justify-center items-center'>
-                 <img className='scale-x-[-1] w-h h-3' src={back2_svg} alt='back2img'></img>
+                 <img className='scale-x-[-1] w-h h-3' src={back2_svg} alt="dropdown"></img>
                 </div>
             </button>
           </div>
