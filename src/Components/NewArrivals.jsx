@@ -23,9 +23,6 @@ const NewArrivals = () => {
             <ItemCard />
             <ItemCard />
             <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
         </div>
       </section>
   )
