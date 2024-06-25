@@ -15,7 +15,9 @@ const style = {
         error2: "#fa4d56",
         warning: "#FFC700",
     },
-    footerh4:"mb-[16px] font-bold m-0"
+    footerh4:"mb-[16px] font-bold m-0",
+    mobile_menu_item:"block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50",
+
 }
 
 export default style;

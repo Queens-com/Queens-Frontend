@@ -6,7 +6,7 @@ const ItemCard = () => {
   return (
     <div className={`relative h-auto w-full rounded-md overflow-hidden shadow-md`}>
       <NewTag />
-      <img src={demoItem1} alt="item" className='w-full h-38 sm:h-48 ojbect-cover'/>
+      <img src={demoItem1} alt="item" className='w-full h-38'/>
       <div className='flex justify-between items-center mt-5 mx-1'>
       <div className='flex flex-col'>
         <span className="font-bold">Product Name</span>
