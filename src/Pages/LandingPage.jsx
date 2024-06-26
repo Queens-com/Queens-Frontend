@@ -5,7 +5,7 @@ import Hero from '../Components/Hero'
 import NewArrivals from '../Components/NewArrivals'
 import CTA1 from '../Components/CTA1'
 import FAQ from '../Components/FAQ'
-import Testimonials from '../Components/Testimonials'
+import Testimonials from '../Components/Testimonialss'
 import FeatureCardSection from '../Components/FeatureCardSection'
 import { handFW_img } from '../Assets'
 
