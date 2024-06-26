@@ -8,17 +8,17 @@ const FAQ = () => {
                 Frequently Asked Questions
             </span>
             <div className='flex flex-row w-full flex-wrap'>
-                <div className='flex flex-col justfiy-center'>
                     <Question />
                     <Question />
                     <Question />
                     <Question />
-
                     <Question />
                     <Question />
                     <Question />
                     <Question />
-                </div>
+                    <Question />
+                    <Question />
+                    <Question />
             </div>
         </section>
     )

@@ -4,12 +4,12 @@ import { hand_img } from '../Assets';
 const CTA1 = () => {
   return (
     // <section className="my-8 sm:my-12 md:my-16 lg:my-20">
-    <section className="py-10">
+    <section className="py-10 ">
       <div
-        className="relative w-full h-full bg-cover bg-center text-white"
+        className="relative w-full h-full aspect-[4/3] lg:aspect-[1440/453] bg-cover bg-center text-white"
         style={{
           backgroundImage: `url(${hand_img})`,
-          aspectRatio: '1440 / 453',
+          // aspectRatio: '1440 / 453',
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50" />

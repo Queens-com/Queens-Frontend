@@ -9,7 +9,7 @@ const Question = () => {
     }
   return (
     <div className={`1w-full p-2 my-2 flex flex-grow ${open?"border border-active_text":""}`}>
-        <div className='ml-5 mr-2'>
+        <div className='ml-5 mr-0'>
             <button onClick={handleClick} className='w-[30px] h-[30px]'>
                 <img src={open?minus_img:plus_img} alt="toggle anser" className='w-full h-auto'/>
             </button>
