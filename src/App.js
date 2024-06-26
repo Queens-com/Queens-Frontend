@@ -6,6 +6,7 @@ import Succes from './Pages/Succes';
 import ResetPassword from './Pages/ResetPassword';
 import OTP from './Pages/OTP';
 import LandingPage from './Pages/LandingPage';
+import Stores from './Pages/Stores';
 
   function App() {
   return (
@@ -17,6 +18,7 @@ import LandingPage from './Pages/LandingPage';
         <Route path="/succes" element={<Succes />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
         <Route path="/otp" element={<OTP />} />
+        <Route path="/stores" element={<Stores />} />
       </Routes>
     </div>
   );

@@ -36,7 +36,7 @@ import closeX_img from "./icons/close-circle.png"
 
 import dior_img from "./images/dior.png"
 import gucci_img from "./images/gucci.png"
-import loius_img from "./images/louis.png"
+import louis_img from "./images/louis.png"
 import versace_img from "./images/versace.png"
 import cartier_img from "./images/cartier.png"
 import hermes_img from "./images/hermes.png"
@@ -80,7 +80,7 @@ export {
 
     dior_img,
     gucci_img,
-    loius_img,
+    louis_img,
     versace_img,
     cartier_img,
     hermes_img,

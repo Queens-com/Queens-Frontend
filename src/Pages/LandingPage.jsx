@@ -13,11 +13,11 @@ const LandingPage = () => {
   return (
     <div className='Landing_Page w-[100vw] max-w-[1440px] text-active_text mx-auto'>
       <Navbar />
-      <img src={handFW_img} className='z-[-1] absolute top-40 w-[80%] h-auto' 
-       style={{
-        aspectRatio: '1440 / 453',
-      }}
-      alt='hand-in-the-background'
+      <img src={handFW_img} className='z-[-1] absolute top-40 w-[80%] h-auto'
+        style={{
+          aspectRatio: '1440 / 453',
+        }}
+        alt='hand-in-the-background'
       />
       <Hero />
 
