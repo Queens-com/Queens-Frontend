@@ -3,11 +3,20 @@ import Testimonial from './Testimonial'
 
 const Testimonials = () => {
   return (
-    <section className='flex flex-col items-center mt-[10rem]'>
+    <section className='flex flex-col items-center mt-[10rem] w-full'>
         <span className='block bricolage font-bold text-3xl mb-1'>
                Testimonials
             </span>
-        <div className='flex overflow-clip'>
+        <div className='flex overflow-hidden'>
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
+            <Testimonial />
             <Testimonial />
             <Testimonial />
             <Testimonial />

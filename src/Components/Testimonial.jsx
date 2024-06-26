@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = () => {
   return (
-    <div className='flex flex-col w-[28rem] p-10 bg-white shadow-md'>
+    <div className='flex flex-col w-[24rem] p-10 bg-white shadow-md'>
         <div className='mb-6'>
             <span className='pr-5'>Place</span>
             <span className=''>|</span>

@@ -7,7 +7,7 @@ import CTA1 from '../Components/CTA1'
 import FAQ from '../Components/FAQ'
 import Testimonials from '../Components/Testimonials'
 import FeatureCardSection from '../Components/FeatureCardSection'
-import { handFW_img, handF_img, hand_img } from '../Assets'
+import { handFW_img } from '../Assets'
 
 const LandingPage = () => {
   return (
