@@ -40,6 +40,7 @@ import louis_img from "./images/louis.png"
 import versace_img from "./images/versace.png"
 import cartier_img from "./images/cartier.png"
 import hermes_img from "./images/hermes.png"
+import profile_banner_img from "./images/profile_banner.png"
 
 export {
     facebook_img,
@@ -84,4 +85,6 @@ export {
     versace_img,
     cartier_img,
     hermes_img,
+
+    profile_banner_img,
 };
