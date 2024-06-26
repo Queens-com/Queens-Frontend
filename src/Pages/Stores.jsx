@@ -26,7 +26,7 @@ const Stores = () => {
                     </p>
                 </div>
 
-                <div className="md:px-20 lg:my-10 flex flex-wrap justify-center gap-y-6">
+                <div className="md:px-20 lg:my-10 mt-6 flex flex-wrap justify-center gap-y-6">
                     {stores.map((store, index) => (
                         <StoreButton key={index} logo={store.logo} altText={store.altText} url={store.url} />
                     ))}

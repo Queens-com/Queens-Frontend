@@ -7,6 +7,7 @@ import ResetPassword from './Pages/ResetPassword';
 import OTP from './Pages/OTP';
 import LandingPage from './Pages/LandingPage';
 import Stores from './Pages/Stores';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
   function App() {
   return (
@@ -19,6 +20,7 @@ import Stores from './Pages/Stores';
         <Route path="/resetPassword" element={<ResetPassword />} />
         <Route path="/otp" element={<OTP />} />
         <Route path="/stores" element={<Stores />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );
