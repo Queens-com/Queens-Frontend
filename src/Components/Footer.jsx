@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="bg-white py-8 px-4 md:px-20 md:w-sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto w-[90%] md:w-[77%]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h4 className={`font-bold mb-4 ${styles.footerh4}`}>Company</h4>
             <ul className="space-y-2">

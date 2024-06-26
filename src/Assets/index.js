@@ -31,7 +31,7 @@ import support24_img from "./icons/24-support.png"
 
 import plus_img from "./icons/add-circle.png"
 import minus_img from "./icons/minus.png"
-import nenu_img from "./icons/menu.png"
+import menu_img from "./icons/menu.png"
 import closeX_img from "./icons/close-circle.png"
 
 export {
@@ -52,7 +52,7 @@ export {
 
     plus_img,
     minus_img,
-    nenu_img,
+    menu_img,
     closeX_img,
 
     Q_svg,
