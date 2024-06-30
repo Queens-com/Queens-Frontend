@@ -3,15 +3,15 @@ import React, { useState, useEffect, useRef } from 'react';
 const Testimonial = ({ place, time, content, userName }) => (
   <div className='flex flex-col min-w-[400px] p-10 bg-white shadow-md mx-4'>
     <div className='mb-6'>
-      <span className='pr-5'>{place}</span>
+      <span className='pr-5'>{userName}</span>
       <span className=''>|</span>
       <span className='pl-2'>{time}</span>
     </div>
     <div className='leading-tight'>
       "{content}"
-    </div>
     <div className='my-2'>
-      <span className='bricolage text-label text-sm'>{userName}</span>
+      <span className='bricolage text-label text-sm'>{place}</span>
+    </div>
     </div>
   </div>
 );

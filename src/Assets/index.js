@@ -24,6 +24,7 @@ import handFW_img from "./images/hand_full_white.png";
 import demoItem1 from "./images/item1.png";
 import hero1_img from "./images/Hero1.png";
 import hero2_img from "./images/Hero2.png";
+import hero3_img from "./images/Hero4.png";
 
 import star_img from "./icons/star.png"
 import back_img from "./icons/back-square.png"
@@ -50,6 +51,7 @@ export {
     demoItem1,
     hero1_img,
     hero2_img,
+    hero3_img,
 
     handF_img,
     handFW_img,

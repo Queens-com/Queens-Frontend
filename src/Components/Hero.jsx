@@ -1,5 +1,5 @@
 import React from 'react';
-import { hero1_img, hero2_img } from '../Assets';
+import { hero1_img, hero3_img } from '../Assets';
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
             alt="Elegant jewelry piece"
           />
           <img 
-            src={hero2_img} 
+            src={hero3_img} 
             className='absolute top-0 right-0 h-2/3 md:h-auto w-auto object-cover rounded-lg shadow-lg' 
             alt="Stylish accessory showcase"
           />
