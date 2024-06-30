@@ -40,7 +40,9 @@ import gucci_img from "./images/gucci.png"
 import louis_img from "./images/louis.png"
 import versace_img from "./images/versace.png"
 import cartier_img from "./images/cartier.png"
-import hermes_img from "./images/hermes.png"
+import hermes_img from "./images/hermes.png";
+
+import profile_img from "./images/profile.png";
 import profile_banner_img from "./images/profile_banner.png"
 
 export {
@@ -52,6 +54,8 @@ export {
     hero1_img,
     hero2_img,
     hero3_img,
+
+    profile_img,
 
     handF_img,
     handFW_img,
