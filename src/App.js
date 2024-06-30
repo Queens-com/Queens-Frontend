@@ -8,6 +8,7 @@ import OTP from './Pages/OTP';
 import LandingPage from './Pages/LandingPage';
 import Stores from './Pages/Stores';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsOfService from './Pages/TermsOfService';
 import Profile from './Pages/Profile';
 
   function App() {
@@ -22,6 +23,7 @@ import Profile from './Pages/Profile';
         <Route path="/otp" element={<OTP />} />
         <Route path="/stores" element={<Stores />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/TOS" element={<TermsOfService />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { Q_svg, back_svg } from '../Assets'
 
@@ -7,7 +6,6 @@ const PrivacyPolicy = () => {
     const title = "roboto font-bold text-active_text mb-3 text-lg"
     const text = "roboto leading-tight text-md mb-6 text-label"
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleNavigate = (path) => {
@@ -18,7 +16,7 @@ const PrivacyPolicy = () => {
         <section>
             <div className='flex flex-col items-center mt-1 md:mt-20 md:mb-5'>
                 <div className='hidden md:block'>
-                    <img src={Q_svg} className='w-20 h-20'></img>
+                    <img src={Q_svg} alt="Q logo" className='w-20 h-20'></img>
                 </div>
             <div className='relative flex items-center justify-center w-full h-14 px-1 mb-2 mt-2 '>
                 <button onClick={() => handleNavigate('')} className='absolute left-3 flex md:hidden items-center text-gray-700 hover:text-gray-900'>
