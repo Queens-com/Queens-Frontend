@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import { Q_svg, back_svg } from '../Assets'
+import { Q_svg, back_svg, back2_svg } from '../Assets'
 
 const TermsOfService = () => {
     let numspan = "roboto font-bold text-active_text mb-3 text-md text-link"
@@ -21,7 +21,7 @@ const TermsOfService = () => {
                 </div>
             <div className='relative flex items-center justify-center w-full h-14 px-1 mb-2 mt-2 '>
                 <button onClick={() => handleNavigate('')} className='absolute left-3 flex md:hidden items-center text-gray-700 hover:text-gray-900'>
-                    <img src={back_svg} alt="dropdown" className={`w-8 h-5 ml-1 transform rotate-[0deg]`} />
+                    <img src={back_svg} alt="dropdown" className={`w-8 h-5 ml-1`} />
                 </button>
                 <h1 className='bricolage flex-grow text-center font-bold text-2xl md:text-4xl'>Terms of Service</h1>
             </div>
@@ -55,7 +55,7 @@ const TermsOfService = () => {
             <div className='w-full flex items-center justify-center my-20'>
                 <button className='flex items-center bg-white text-black hover:bg-black hover:text-white text-lg rounded-full py-2 px-6 border border-black w-auto transition duration-300'>
                     Continue
-                    <img src={back_svg} alt="dropdown" className={`inline-block w-5 h-4 ml-1 transform rotate-[180deg] text-white`} />
+                    <img src={back2_svg} alt="dropdown" className={`inline-block w-5 h-4 ml-1`} />
                 </button>
             </div>
         </section>

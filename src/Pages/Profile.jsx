@@ -33,8 +33,11 @@ const Profile = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <div>
+                <div className='relative'>
                     <img src={profile_img} alt="Profile" className="w-40 h-40 rounded-full object-cover border-[10px] border-white -mt-20" />
+                    <button className='absolute flex items-center justify-center bg-succes1 rounded-full aspect-square bottom-3 right-3 border-8'>
+                    <i className="fas fa-camera"></i>
+                    </button>
                 </div>
                 <div className="text-center m-4">
                     <h1 className="text-4xl font-bold">Toby MacQueen</h1>
@@ -60,10 +63,10 @@ const Profile = () => {
 
             <div className="mt-8 w-[80%] mx-auto mb-20 md:mb-40 bo">
                 <div className={`transition-opacity duration-300 ${activeTab === 'profile' ? 'opacity-100' : 'opacity-0 hidden'}`}>
-                   <EditProfile />
+                    <EditProfile />
                 </div>
                 <div className={`transition-opacity duration-300 ${activeTab === 'orders' ? 'opacity-100' : 'opacity-0 hidden'}`}>
-                   <Orders />
+                    <Orders />
                 </div>
                 <div className={`transition-opacity duration-300 ${activeTab === 'wishlist' ? 'opacity-100' : 'opacity-0 hidden'}`}>
                     <Wishlist />

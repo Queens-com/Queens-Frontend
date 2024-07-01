@@ -10,6 +10,7 @@ import Stores from './Pages/Stores';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService';
 import Profile from './Pages/Profile';
+import PageNotFound from './Pages/404';
 
   function App() {
   return (
@@ -25,6 +26,7 @@ import Profile from './Pages/Profile';
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/TOS" element={<TermsOfService />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/404" element={<PageNotFound />} />
       </Routes>
     </div>
   );
