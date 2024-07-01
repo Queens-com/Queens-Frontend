@@ -37,7 +37,7 @@ const Navbar = () => {
                             </form>
                         </div>
                         <div className='flex items-center space-x-4'>
-                            <button><img src={profile_svg} alt="Profile" className="w-6 h-6" /></button>
+                            <button onClick={() => handleNavigate('/profile')} ><img src={profile_svg} alt="Profile" className="w-6 h-6" /></button>
                             <button><img src={heart_svg} alt="Favorites" className="w-6 h-6" /></button>
                             <button><img src={cart_svg} alt="Cart" className="w-6 h-6" /></button>
                             <button className='flex-shrink-0 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition duration-300' onClick={() => handleNavigate('/signup')}>Sign up</button>
@@ -47,8 +47,8 @@ const Navbar = () => {
 
                     {/* Mobile Navigation */}
                     <div className='flex items-center lg:hidden'>
-                        <button><img src={search_svg} alt="Search" className="w-6 h-6 mr-4" /></button>
-                        <button><img src={profile_svg} alt="Profile" className="w-6 h-6 mr-4" /></button>
+                        <button ><img src={search_svg} alt="Search" className="w-6 h-6 mr-4" /></button>
+                        <button onClick={() => handleNavigate('/profile')}><img src={profile_svg} alt="Profile" className="w-6 h-6 mr-4" /></button>
                         <button><img src={heart_svg} alt="Favorites" className="w-6 h-6 mr-4" /></button>
                         <button><img src={cart_svg} alt="Cart" className="w-6 h-6 mr-4" /></button>
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='text-gray-700 hover:text-gray-900'>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className='lg:hidden absolute left-0 top-0 z-[2] flex flex-col pt-2 px-5 bg-white w-[100vw] h-[100vh]'>
+                <div className='lg:hidden fixed left-0 top-0 z-[2] flex flex-col pt-2 px-5 bg-white w-[100vw] h-[100vh]'>
                     <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                         <div className='flex justify-between mb-6 items-center'>
                             <p className='bricolage font-bold text-black text-4xl'>Menu</p>
@@ -83,7 +83,8 @@ const Navbar = () => {
                         <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>HERMES</button>
 
                     </div>
-                    <div className='absolute bottom-5 flex w-[90vw] space-x-2 px-2'>
+                    {/* <div className='absolute bottom-10 flex w-[90vw] space-x-2 px-2'> */}
+                    <div className='flex w-[90vw] space-x-2 px-2'>
                         <button className='basis-1/2 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition duration-300' onClick={() => handleNavigate('/signup')}>Sign up</button>
                         <button className='basis-1/2 text-gray-700 hover:text-gray-900 px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-100 transition duration-300' onClick={() => handleNavigate('/login')}>Login</button>
                     </div>

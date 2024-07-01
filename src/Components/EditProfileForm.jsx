@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from '../axios'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import '../Styles/globalStyles.css'
 
 const EditProfileForm = () => {
     const [showModal, setShowModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
-    const navigate = useNavigate(); 
+    // const navigate = useNavigate(); 
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -17,24 +17,18 @@ const EditProfileForm = () => {
         const data = {
             first_name: formData.get('firstName'),
             last_name: formData.get('lastName'),
-            middle_name: formData.get('middleName'),
             email: formData.get('email'),
             country: formData.get('country'),
-            country_code: formData.get('countryCode'),
-            phone: formData.get('phoneNumber'),
-            password: formData.get('password'),
-            profile_photo: formData.get('profilePicture'),
         };
 
         try {
             const response = await axios.post('/', data);
             console.log(response.data);
-            navigate('/');
         }
         catch (error) {
-            console.error('There was an error signing up.', error.response || error);
+            console.error('There was an error editing user profile.', error.response || error);
 
-            const errorMessage = error.response?.data?.detail || 'An error occurred during signup. Please try again.';
+            const errorMessage = error.response?.data?.detail || 'An error occurred editing your profile. Please try again.';
             setErrorMessage(errorMessage);
             setShowModal(true);
 
@@ -69,7 +63,7 @@ const EditProfileForm = () => {
             </label>
 
             <div className='flex gap-3 flex-col mt-4'>
-                <button className='bg-white text-black hover:bg-black hover:text-white transition duration-300 pt-2 pb-2 ps-4 pe-4 rounded-full' type='submit'>Save Changes</button>
+                <button className='bg-white text-black hover:bg-black hover:text-white border border-black transition duration-300 pt-2 pb-2 ps-4 pe-4 rounded-full' type='submit'>Save Changes</button>
             </div>
 
         </form>

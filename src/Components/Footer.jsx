@@ -9,8 +9,8 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-white py-8 px-4 md:px-20 md:w-sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto w-[90%] md:w-[77%]">
+    <footer className="bg-white py-8 px-4 md:px-0 md:w-sm:px-6 ">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[80%]">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h4 className={`font-bold mb-4 ${styles.footerh4}`}>Company</h4>
@@ -47,7 +47,7 @@ function Footer() {
 
         <div className="w-[100%] h-[1px] bg-placeholder_text mt-10" />
 
-        <div className="mt-1 pt-8 border-t border-gray-200">
+        <div className="mt-1 pt-8 ">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <img className="w-12 h-12" src={Q_svg} alt="logo" />
             <span className="text-gray-500 text-sm">{`© ${new Date().getFullYear()} Queens. All rights reserved`}</span>
