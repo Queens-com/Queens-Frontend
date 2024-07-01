@@ -30,7 +30,7 @@ function Footer() {
           </div>
           <div className="col-span-1 lg:col-span-2">
             <h4 className={`font-bold mb-4 ${styles.footerh4}`}>Help</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 lg:gap-4">
               <ul className="space-y-2">
                 {["Shopping and returns", "Size guides", "Material and care", "How to pay"].map((item) => (
                   <li key={item}><a href="#" className="hover:text-gray-600 transition-colors">{item}</a></li>
