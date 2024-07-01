@@ -11,7 +11,7 @@ const WishlistCard = () => {
 
     <div className='flex justify-between items-center mt-4 px-1 mb-1'>
     <div className='flex flex-col'>
-      <span className="font-bold mb text-active_text">Product name</span>
+      <span className="font-bold mb text-active_text leading-tight">Product name</span>
       <span className='text-sm text-placeholder_text leading-snug'>Ref ID: {refID}</span>
     </div>
       <img src={cart_svg} alt="cart" className='w-[22px] h-[20px]'/>
