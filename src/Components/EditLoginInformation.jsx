@@ -56,15 +56,15 @@ const EditLoginInformation = () => {
             </label>
 
             <Modal open={showModal} onClose={() => setShowModal(false)}>
-                <div className='flex flex-col gap-4 text-lg py-6 px-8 w-full'>
+                <div className='flex flex-col gap-4 text-lg py-6 px-2 md:px-8 w-full'>
                     {/* <img src={warning_svg} className='w-20 h-auto aspect-square self-center' /> */}
                     <p className='self-center text-center text-error1 font-bold text-2xl'>Delete Account?</p>
                     <p className='text-label font-bold text'>You are about to delete your accout</p>
                     <p classame="text-placeholder_text p-10">You will on longer be able to log into Queens with this account</p>
                     <p classame="text-placeholder_text">This action <span className='text-error1 font-semibold'>cannot be undone.</span> Are you sure you want to continue?</p>
-                    <div className='flex space-x-8 mt-4'>
-                        <button onClick={() => { }} className='basis-1/2 px-2 py-2 bg-error1 rounded-full text-gray-100'>Delete</button>
-                        <button onClick={() => {setShowModal(false)}} className='basis-1/2 px-2 py-2 bg-wbite font-semibold border border-1 border-black rounded-full text-black'>Cancel</button>
+                    <div className='flex flex-wrap sm:flex-nowrap gap-2 sm:gap-4 mt-4'>
+                        <button onClick={() => { }} className='roboto w-full sm:basis-1/2 px-2 py-2 min-w-[120px] bg-error1 rounded-full text-gray-100'>Delete</button>
+                        <button onClick={() => {setShowModal(false)}} className='roboto w-full sm:basis-1/2 px-2 py-2 min-w-[120px] bg-wbite font-semibold border border-1 border-black rounded-full text-black'>Cancel</button>
                     </div>
                 </div>
             </Modal>
