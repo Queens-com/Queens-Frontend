@@ -11,6 +11,7 @@ import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService';
 import Profile from './Pages/Profile';
 import PageNotFound from './Pages/404';
+import AccountDeleted from './Pages/AccountDeleted';
 
   function App() {
   return (
@@ -27,6 +28,7 @@ import PageNotFound from './Pages/404';
         <Route path="/TOS" element={<TermsOfService />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/404" element={<PageNotFound />} />
+        <Route path="/accountdeleted" element={<AccountDeleted />} />
       </Routes>
     </div>
   );

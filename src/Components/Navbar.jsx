@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='w-full bg-white px-2 mt-1 md:mt-0 md:px-20 shadow-sm'>
+        <nav className='sticky top-0 w-full bg-white px-2 mt-1 md:mt-0 md:px-20 shadow-sm z-[10]'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     {/* Logo */}
@@ -26,7 +26,7 @@ const Navbar = () => {
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='flex items-center text-gray-700 hover:text-gray-900'>
                             <img src={shop_svg} alt='shop' className='w-5 h-5 mr-1' />
                             <span className='mr-4'>Stores</span>
-                            <img src={back_svg} alt="dropdown" className={`w-3 h-3 ml-1 ${isMenuOpen?'transform rotate-[90deg]':'transform rotate-[-90deg]'}`} />
+                            <img src={back_svg} alt="dropdown" className={`w-3 h-3 ml-1 ${isMenuOpen ? 'transform rotate-[90deg]' : 'transform rotate-[-90deg]'}`} />
                         </button>
                         <div className='flex-grow max-w-xl mx-4'>
                             <form className='relative' onSubmit={(e) => e.preventDefault()}>
@@ -91,18 +91,20 @@ const Navbar = () => {
                 </div>
             )}
 
-             {/* Dexktop Dropdown */}
-             {isMenuOpen && (
+            {/* Dexktop Dropdown */}
+            {isMenuOpen && (
+                <div className='fixed inset-0 transparent' onClick={()=>{setIsMenuOpen(false)}}>
                 <div className='hidden lg:absolute lg:flex flex-col left-40 top-14 z-[2] pt-2 px-5 bg-transparent w-auto h-auto'>
-                    <div className='flex flex-col px-2 pt-2 pb-3 space-y-1 md:space-y-0 sm:px-3'>
-                
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>DIOR</button>
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>GUCCI</button>
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>LOUIS VUTTON</button>
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>VERSACE</button>
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>CARTIER</button>
-                        <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>HERMES</button>
+                        <div className='flex flex-col px-2 pt-2 pb-3 space-y-1 md:space-y-0 sm:px-3' onClick={(e)=>{e.stopPropagation()}}>
 
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>DIOR</button>
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>GUCCI</button>
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>LOUIS VUTTON</button>
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>VERSACE</button>
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>CARTIER</button>
+                            <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>HERMES</button>
+
+                        </div>
                     </div>
                 </div>
             )}

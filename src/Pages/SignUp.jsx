@@ -140,7 +140,7 @@ function SignUp() {
 
 
             <div className='flex items-center gap-3 mt-6 text-left text-sm'>
-            <input type="checkbox" name="t&c" id="t&c" className='bg-black'/>
+            <input type="checkbox" name="t&c" id="t&c" class='checkbox'/>
             <p>By clicking, you agree to Queen’s Privacy Policy and terms of service</p>
           </div>
 

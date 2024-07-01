@@ -34,8 +34,8 @@ const Profile = () => {
 
             <div className="flex flex-col items-center justify-center">
                 <div className='relative'>
-                    <img src={profile_img} alt="Profile" className="w-40 h-40 rounded-full object-cover border-[10px] border-white -mt-20" />
-                    <button className='absolute flex items-center justify-center bg-succes1 rounded-full aspect-square bottom-3 right-3 border-8'>
+                    <img src={profile_img} alt="Profile" className="w-40 h-40 rounded-full object-cover border-[10px] border-white -mt-20 shadow-md" />
+                    <button className='absolute flex items-center justify-center rounded-full aspect-square bottom-3 right-3 border-8 shadow-md'>
                     <i className="fas fa-camera"></i>
                     </button>
                 </div>
