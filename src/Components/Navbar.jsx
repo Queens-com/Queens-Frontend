@@ -82,6 +82,10 @@ const Navbar = () => {
                         <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>CARTIER</button>
                         <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>HERMES</button>
 
+                        <div className="w-[100%] h-[1px] bg-placeholder_text mt-10" />
+                        <button onClick={() => handleNavigate('/')} className={style.mobile_menu_item}>Home</button>
+                        <button onClick={() => handleNavigate('/stores')} className={style.mobile_menu_item}>Select a Store</button>
+
                     </div>
                     {/* <div className='absolute bottom-10 flex w-[90vw] space-x-2 px-2'> */}
                     <div className='flex w-[90vw] space-x-2 px-2'>
@@ -93,9 +97,10 @@ const Navbar = () => {
 
             {/* Dexktop Dropdown */}
             {isMenuOpen && (
-                <div className='fixed inset-0 transparent' onClick={()=>{setIsMenuOpen(false)}}>
-                <div className='hidden lg:absolute lg:flex flex-col left-40 top-14 z-[2] pt-2 px-5 bg-transparent w-auto h-auto'>
-                        <div className='flex flex-col px-2 pt-2 pb-3 space-y-1 md:space-y-0 sm:px-3' onClick={(e)=>{e.stopPropagation()}}>
+                <div className='fixed inset-0 transparent' onClick={() => { setIsMenuOpen(false) }}>
+                    <div className='hidden lg:absolute lg:flex flex-col left-40 top-14 z-[2] pt-2 px-5 bg-transparent w-auto h-auto'>
+                        <div className='flex flex-col px-2 pt-2 pb-3 space-y-1 md:space-y-0 sm:px-3' onClick={(e) => { e.stopPropagation() }}>
+
 
                             <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>DIOR</button>
                             <button onClick={() => handleNavigate('')} className={style.mobile_menu_item}>GUCCI</button>
